@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>소아물리치료 게임 모드 퀴즈 템플릿</title>
+  <title>해부학 게임 모드 퀴즈 템플릿</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     * {
@@ -363,7 +363,7 @@
     <header>
       <div class="title-group">
         <h1>
-          소아물리치료 문제은행
+          해부학 문제은행
           <span class="badge">게임 모드 템플릿</span>
         </h1>
         <p>문제 데이터는 직접 채워 넣는 버전</p>
@@ -378,11 +378,11 @@
         <div class="panel">
           <div class="panel-header">
             <h2>🎮 문제 영역</h2>
-            <span class="chip" id="categoryChip">소아물리치료</span>
+            <span class="chip" id="categoryChip">해부학</span>
           </div>
           <div class="controls-row">
             <select id="categorySelect">
-              <option value="ALL">소아물리치료 (전체)</option>
+              <option value="ALL">해부학 (전체)</option>
             </select>
             <button class="secondary" id="shuffleBtn">섞어서 다시 시작</button>
           </div>
@@ -433,7 +433,7 @@
           </div>
           <div class="tag-row">
             <span class="tag">국가고시 대비</span>
-            <span class="tag">소아물리치료 전용</span>
+            <span class="tag">해부학 전용</span>
             <span class="tag">오답 자동 저장</span>
             <span class="tag">암기모드 키워드 인식</span>
           </div>
@@ -450,8 +450,8 @@
   </div>
 
   <script>
-    // ===== 소아물리치료 전용 설정 =====
-    const DEFAULT_CATEGORY = "소아물리치료";
+    // ===== 해부학 전용 설정 =====
+    const DEFAULT_CATEGORY = "해부학";
 
     // 🔹 이 배열만 편집하면 됨! (문제 추가 영역)
     const rawQuestions = [
@@ -1234,7 +1234,7 @@
       renderWrongList();
     }
 
-    // 🔹 카테고리는 이제 소아물리 하나라서 아주 단순화
+    // 🔹 카테고리는 이제 해부학 하나라서 아주 단순화
     function applyFilter() {
       filteredQuestions = [...questionBank];
       categoryChip.textContent = DEFAULT_CATEGORY;
@@ -1522,3 +1522,4 @@
   </script>
 </body>
 </html>
+
